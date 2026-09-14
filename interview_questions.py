@@ -11,13 +11,13 @@ def test_reverse_string():
     print("Test Passed! " + input_str + "'s reverse is " + reversed_str)
 
     # Function to check for palindrome
-    def is_palindrome(word):
+def is_palindrome(word):
         # Reverse the string using reversed() and join().
         reversed_str = ''.join(reversed(word))
         return word == reversed_str
 
     # Test. Verification of is_palindrome function
-    def test_is_palindrome():
+def  test_is_palindrome():
         # Define the input string
         input_str = "racecar"
 
@@ -28,3 +28,29 @@ def test_reverse_string():
         assert result == True
 
         print("Test Passed! '" + input_str + "' is a palindrome.")
+
+# Import the math module to access mathematical functions
+import math
+# Calculate the factorial of 5 using the factorial function from the math module
+print(math.factorial(5))
+
+# Import the math module to access mathematical functions
+import math
+
+def compute_factorial(number):
+    # Compute the factorial of "number" using Python's built-in factorial function from the math module.
+    return math.factorial(number)
+
+
+def test_compute_factorial():
+    # Define the input number
+    input_number = 5
+
+    # Perform the factorial computation
+    result = compute_factorial(input_number)
+
+    # Check if the result is equal to the expected factorial value
+    assert result == 120
+
+    print("Test Passed! The factorial of " + str(input_number) + " is " + str(result))
+
